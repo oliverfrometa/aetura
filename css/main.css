@@ -26,18 +26,21 @@ h1, h2, h3, h4, h5, h6, a, p{
 
 body {
     font-family: 'Messina Sans Regular', sans;
-}
-
-main {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111;
+    background-color: #000;
 }
 
-.text-container {
-    text-align: center;
-    width: 80%;
+.text {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    transition: 300ms;
+}
+
+.text:hover {
+    color: #999;
 }
