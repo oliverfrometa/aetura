@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,57 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Aetura</title>
 </head>
+
 <body>
-    <main>
-        <p>Aetura is an New York based art direction, design and technology studio.</p>
-    </main>
+
+    <header>
+        <h1 class="logo">Aetura</h1>
+        <div class="hero">
+            <h1>Building experiences worldwide.</h1>
+        </div>
+    </header>
+    
+    <nav id="navContainer">
+        <div class="contact-container" id="servicesContainer">
+            <div class="card-div card-button">
+                <h2>Design →</h2>
+                <p>We design the entire thing. Just sit back, relax and get ready for lift-off. Full digital experiences, clear messages, and plain common sense.</p>
+            </div>
+            <div class="card-div card-button">
+                <h2>Build →</h2>
+                <p>We bridge the gap between marketing and design. we disrupt common communication and create strong bonds with your customers.</p>
+            </div>
+            <div class="card-div card-button">
+                <h2>Grow →</h2>
+                <p>We use the latest tools and techniques in no-code to develop highly functional products on all devices. Your idea. Your business. Your future.</p>
+            </div>
+        </div>
+        <div class="contact-container" id="contactContainer">
+            <div class="card-div">
+                <h2>Contact</h2>
+                <a href="mailto:aeturastudio@gmail.com">aeturastudio@gmail.com</a>
+                <a href="https://www.instagram.com/aetura/" target=" ">Instagram</a>
+            </div>
+            <div class="card-div card-button">
+                <h2>Start a project →</h2>
+                <p>The questions will help us determine the scope, scale, and estimate the project budget. Let's make it happen.
+                </p>
+            </div>
+            <div class="card-div card-button">
+                <h2>Aetura Talent →</h2>
+                <p>Join our team. We are always on the lookout for new talent and would love to get to know you better.</p>
+            </div>
+        </div>
+        <div class="nav-item-container">
+            <button class="nav-item action-btn">Home</button>
+            <button class="nav-item" id="servicesBtn" onclick="toggleServicesContainer()">Services</button>
+            <button class="nav-item">Work</button>
+            <button class="nav-item">About us</button>
+            <button class="nav-item" id="contactBtn" onclick="toggleContainer()">Contact</button>
+        </div>
+    </nav>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

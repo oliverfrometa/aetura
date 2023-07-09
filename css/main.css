@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Messina Sans Regular;
-    src: url(../resources/fonts/MessinaSansWebTrial-Regular.woff2);
+    font-family: Satoshi Regular;
+    src: url(../resources/fonts/Satoshi/Satoshi-Medium.otf);
 }
 
 * {
@@ -10,37 +10,139 @@
 }
 
 :root {
-    --color-sand: #D6CFBF;
-    --color-nude: #C0A68D;
-    --color-clay: #AB8266;
-    --color-mud: #4E413B;
-    --color-moss: #778A78;
-    --color-sage: #B2AC88;
-
-}
-
-h1, h2, h3, h4, h5, h6, a, p{
-    font-weight: 100;
-    color: white;
+    --general-padding: 20px;
 }
 
 body {
-    font-family: 'Messina Sans Regular', sans;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
+    font-family: "Satoshi Regular", sans-serif;
+    background-color: #111;
+    color: #e0e0e0;
 }
 
-.text {
+a {
     text-decoration: none;
-    color: #fff;
-    padding: 30px;
+    color: #999;
     transition: 300ms;
 }
 
-.text:hover {
+a:hover {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+header {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 3.5em;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    justify-self: center;
+    font-size: 2.5em;
+}
+
+#navContainer {
+    position: fixed;
+    flex-direction: column;
+    gap: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: solid red 2px; */
+}
+
+.nav-item-container {
+    /* width: 100%; */
+    border-radius: 10px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+}
+
+.nav-item {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    transition: 300ms;
+}
+
+.nav-item:hover {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, .2);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #navContainer {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.action-btn {
+    background-color: rgba(255, 255, 255, 1);
+    color: #111;
+}
+
+.contact-container {
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    bottom: 90px;
+    border-radius: 10px;
+    background-color: rgba(80, 80, 80, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        width: 95%;
+        justify-content: space-between;
+    }
+}
+
+.card-button {
+    padding: 10px;
+    transition: 300ms;
+}
+
+.card-button:hover {
+    background-color: #444;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-div p {
     color: #999;
 }
